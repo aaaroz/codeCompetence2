@@ -1,38 +1,67 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@500;700&family=Montserrat:wght@300;400;500;700&family=Open+Sans&family=Roboto:wght@300;400;500;700;900&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Jost", sans-serif;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav {
+  background: var(--Blue-Light-2, #00cac5);
+  height: 75px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navbar-brand > img {
+  width: 92px;
+  height: 55px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.nav-link {
+  color: var(--White, #f6f6f6);
+  letter-spacing: 2.64px;
 }
-
-.App-link {
-  color: #61dafb;
+main {
+  background-color: #f6f6f6;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+main > header {
+  width: 100%;
+  height: 733px;
+  background-image: url(./assets/bg-image.png);
+}
+main > header > .welcome-text {
+  width: 500px;
+  height: 140px;
+  margin-left: 119px;
+  padding-top: 136px;
+}
+main > header > .welcome-text > h1 {
+  font-size: 70px;
+  font-weight: 900;
+  letter-spacing: 7.7px;
+}
+main > header > .welcome-text > p {
+  letter-spacing: 2px;
+}
+section {
+  height: 477px;
+  background-color: #f6f6f6;
+}
+.contact {
+  height: 388px;
+}
+.contact > h1 {
+  font-size: 48px;
+  font-weight: 900;
+}
+.contact > p {
+  width: 419px;
+  letter-spacing: 0.72px;
+}
+footer {
+  background-color: #f6f6f6;
+}
+footer > section {
+  height: 390px;
+  background-image: url(./assets/Footer-bg.png);
 }
