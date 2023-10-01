@@ -20,7 +20,6 @@ export default function LandingPage() {
     <>
       <Header scrollToAbout={scrollToAbout} scrollToContact={scrollToContact} />
       <main>
-        {/* main header */}
         <header>
           <div className="welcome-text">
             <h1 className="mb-2 lh-1 text-white">DIGITAL INNOVATION</h1>
@@ -35,7 +34,6 @@ export default function LandingPage() {
             </button>
           </div>
         </header>
-        {/* end of main header */}
         <Contact ref={contact} text="Contact Us!" />
         <About ref={about} text="About Us" />
       </main>
