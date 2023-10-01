@@ -22,13 +22,25 @@ export default function Footer() {
                 Join Now
               </button>
               <div className="icon d-flex gap-3 mt-3">
-                <a href="https://www.instagram.com/rmdnmar/" target="_blank">
+                <a
+                  href="https://www.instagram.com/rmdnmar/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img src={instaIcon} alt="Instagram Icon" />
                 </a>
-                <a href="https://www.facebook.com/Rhamdanz18/" target="_blank">
+                <a
+                  href="https://www.facebook.com/Rhamdanz18/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img src={facebookIcon} alt="Facebook Icon" />
                 </a>
-                <a href="https://www.linkedin.com/in/rmdnmar/" target="_blank">
+                <a
+                  href="https://www.linkedin.com/in/rmdnmar/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   <img src={linkedinIcon} alt="Linkedin Icon" />
                 </a>
                 <a href="/#">
@@ -67,7 +79,11 @@ export default function Footer() {
               <p className="text-info fw-semibold mt-1 mb-2">
                 (0812) 1329-4383
               </p>
-              <a href="https://wa.me/1081213294383" target="_blank">
+              <a
+                href="https://wa.me/6281213294383"
+                target="_blank"
+                rel="noreferrer"
+              >
                 <button
                   type="button"
                   className="btn btn-info text-white ps-4 pe-4"

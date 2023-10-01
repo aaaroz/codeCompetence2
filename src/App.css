@@ -47,6 +47,9 @@ section {
   height: 477px;
   background-color: #f6f6f6;
 }
+.about {
+  text-align: justify;
+}
 .contact {
   height: 388px;
 }

@@ -1,6 +1,7 @@
 import Contact from "../components/contact";
 import Footer from "../components/footer";
 import Header from "../components/header";
+import About from "../components/about";
 
 export default function LandingPage() {
   return (
@@ -24,6 +25,7 @@ export default function LandingPage() {
         </header>
         {/* end of main header */}
         <Contact />
+        <About />
       </main>
       <Footer />
     </>
