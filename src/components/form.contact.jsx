@@ -33,8 +33,8 @@ export default function FormContact() {
     }
   }, [formState, reset]);
 
-  return (
-    <>
+  const FormPopUp = () => {
+    return (
       <Modal show={isShow} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Hi {name} !</Modal.Title>
@@ -50,6 +50,11 @@ export default function FormContact() {
           </Button>
         </Modal.Footer>
       </Modal>
+    );
+  };
+  return (
+    <>
+      <FormPopUp />
       <form onSubmit={handleSubmit(onSubmit)}>
         <div className="row pt-5 mb-4">
           <div className="col">
