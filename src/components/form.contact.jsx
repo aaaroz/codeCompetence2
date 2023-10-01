@@ -17,7 +17,7 @@ export default function FormContact() {
     handleSubmit,
     reset,
     formState,
-    formState: { errors, isSubmitSuccessful },
+    formState: { errors },
   } = useForm({ resolver: yupResolver(ContactSchema) });
 
   const onSubmit = (data) => {

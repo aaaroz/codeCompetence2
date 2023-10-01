@@ -1,12 +1,24 @@
 import Contact from "../components/contact";
 import Footer from "../components/footer";
-import Header from "../components/header";
 import About from "../components/about";
+import { useRef } from "react";
+import Header from "../components/header";
 
 export default function LandingPage() {
+  const contact = useRef(null);
+  const about = useRef(null);
+
+  const scrollToContact = () => {
+    contact.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const scrollToAbout = () => {
+    about.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <>
-      <Header />
+      <Header scrollToAbout={scrollToAbout} scrollToContact={scrollToContact} />
       <main>
         {/* main header */}
         <header>
@@ -24,8 +36,8 @@ export default function LandingPage() {
           </div>
         </header>
         {/* end of main header */}
-        <Contact />
-        <About />
+        <Contact ref={contact} text="Contact Us!" />
+        <About ref={about} text="About Us" />
       </main>
       <Footer />
     </>

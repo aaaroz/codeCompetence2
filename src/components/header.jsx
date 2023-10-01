@@ -1,6 +1,7 @@
+import React from "react";
 import navbarBrand from "../assets/navbar-brand.png";
 
-export default function Header() {
+const Header = (props) => {
   return (
     <header>
       {/* navbar */}
@@ -37,12 +38,12 @@ export default function Header() {
                   Product
                 </a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item" onClick={props.scrollToAbout}>
                 <a className="nav-link fs-5 fw-medium" href="/#">
                   About
                 </a>
               </li>
-              <li className="nav-item">
+              <li className="nav-item" onClick={props.scrollToContact}>
                 <a className="nav-link fs-5 fw-medium" href="/#">
                   Contacts
                 </a>
@@ -54,4 +55,6 @@ export default function Header() {
       {/* End of navbar */}
     </header>
   );
-}
+};
+
+export default Header;

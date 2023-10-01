@@ -21,6 +21,13 @@ nav {
   color: var(--White, #f6f6f6);
   letter-spacing: 2.64px;
 }
+.nav-link:hover,
+.nav-link:visited {
+  color: #f6f6f6;
+  text-decoration: underline;
+  text-underline-offset: 7px;
+}
+
 main {
   background-color: #f6f6f6;
 }
