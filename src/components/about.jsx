@@ -1,6 +1,7 @@
+import { forwardRef } from "react";
 import AboutImage from "../assets/about.png";
 
-export default function About() {
+function About({ text }, about) {
   return (
     <section>
       <div className="container mt-5 pt-5">
@@ -9,7 +10,7 @@ export default function About() {
             <img src={AboutImage} alt="Logo" width={430} height={290} />
           </div>
           <div className="col-6 ms-5">
-            <h1>About Us</h1>
+            <h1 ref={about}>{text}</h1>
             <p className="about mt-4 fs-6">
               Digital Innovation is a content writer focused on helping B2B tech
               companies tell their unique stories. Not just selling their
@@ -28,3 +29,4 @@ export default function About() {
     </section>
   );
 }
+export default forwardRef(About);
