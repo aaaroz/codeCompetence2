@@ -35,7 +35,7 @@ const Header = (props) => {
               </li>
               <li className="nav-item">
                 <a className="nav-link fs-5 fw-medium" href="/#">
-                  Product
+                  Products
                 </a>
               </li>
               <li className="nav-item" onClick={props.scrollToAbout}>
