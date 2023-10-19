@@ -34,7 +34,7 @@ const Header = (props) => {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link fs-5 fw-medium" href="/#">
+                <a className="nav-link fs-5 fw-medium" href="/products">
                   Products
                 </a>
               </li>
